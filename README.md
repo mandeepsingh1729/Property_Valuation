@@ -22,3 +22,9 @@ A multimodal deep learning system that predicts property prices using both tabul
 3. In `data_fetcher.ipynb`, find this line:
    ```python
    MAPBOX_TOKEN = "YOUR_API_KEY_HERE"
+### **Step 3: Run Data Fetcher**
+This will:
+1. Read latitude/longitude from your CSV files
+2. Download satellite images for each property
+3. Save images to: Data/images/train/ and Data/images/test/
+4. Images are named by property ID (e.g., "12345.jpg")
