@@ -3,17 +3,19 @@
 A multimodal deep learning system that predicts property prices using both tabular property features and satellite imagery.
 
 ## Project Structure
+```
 ├── data_fetcher.ipynb # Downloads satellite images using lat/long coordinates
 ├── preprocessing.ipynb # Preprocesses tabular data and images
 ├── model_training.ipynb # Trains and evaluates multimodal models
 ├── processed_data.pt # Preprocessed dataset (generated)
 └── Data/
-├── CSV/
-│ ├── train.csv # Training data with property features
-│ └── test.csv # Test data without prices
-└── images/
-├── train/ # Satellite images for training
-└── test/ # Satellite images for testing
+    ├── CSV/
+    │   ├── train.csv # Training data with property features
+    │   └── test.csv # Test data without prices
+    └── images/
+        ├── train/ # Satellite images for training
+        └── test/ # Satellite images for testing
+```
 
 ## 📁 Project Files
 
