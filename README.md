@@ -28,3 +28,21 @@ This will:
 2. Download satellite images for each property
 3. Save images to: Data/images/train/ and Data/images/test/
 4. Images are named by property ID (e.g., "12345.jpg")
+
+### **Step 4: Run Preprocessing**
+This will:
+1. Load and clean tabular data (handle missing values, create new features)
+2. Load and resize all satellite images (224x224 pixels)
+3. Normalize numerical features, encode categorical variables
+4. Save everything to: processed_data.pt
+
+### **Step 5: Run Model Training**
+This will:
+1. Load processed_data.pt
+2. Train multimodal models (CNN for images + MLP for tabular)
+3. Implement early stopping based on validation loss
+4. Generate test predictions
+5. Create training loss visualizations
+### **Step 5: Dependencies**
+# Install all required packages
+pip install torch torchvision pandas numpy scikit-learn matplotlib pillow requests
