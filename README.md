@@ -21,4 +21,4 @@ A multimodal deep learning system that predicts property prices using both tabul
 2. Generate a free Maps Static API token
 3. In `data_fetcher.ipynb`, find this line:
    ```python
-   API_KEY = "YOUR_GOOGLE_MAPS_API_KEY_HERE"
+   MAPBOX_TOKEN = "YOUR_API_KEY_HERE"
